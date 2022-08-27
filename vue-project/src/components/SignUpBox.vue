@@ -1,4 +1,4 @@
-<script  lang="ts">
+<script  lang="js">
 import { ref } from 'vue'
 
 //everything is the same as the login component, except one extra input for the password confirmation

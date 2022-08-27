@@ -1,5 +1,5 @@
 
-<script  lang="ts">//no setup tag, makes it a bit more complicated to set up component, but I believe it makes it easier as complexity grows
+<script  lang="js">//no setup tag, makes it a bit more complicated to set up component, but I believe it makes it easier as complexity grows
 import { ref } from 'vue'
 
 export default {
