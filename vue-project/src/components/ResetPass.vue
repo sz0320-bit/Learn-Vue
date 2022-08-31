@@ -133,7 +133,7 @@ export default {
           </button>
           <h1>
             Already have an account?
-            <RouterLink to="/signin">
+            <RouterLink to="/">
               <span class="text-blue-500"> Sign In</span>
             </RouterLink>
           </h1>
