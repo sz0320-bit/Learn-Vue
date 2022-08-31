@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  @apply bg-[#1f1f1f] text-white font-mono;
+  @apply bg-[#1f1f1f] text-white font-mono ;
 }
 
 .fade-enter-from,
@@ -13,5 +13,14 @@ body{
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.25s ease-in;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.glass{
+  background: rgba(84, 84, 84, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.7px);
+  -webkit-backdrop-filter: blur(10.7px);
+  border: 1px solid rgba(84, 84, 84, 0.14);
 }

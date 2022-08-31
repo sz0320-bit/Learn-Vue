@@ -1,7 +1,7 @@
 
 import {createRouter, createWebHistory} from 'vue-router';
 import LoginBox from "../components/LoginBox.vue";
-import SignUpBox from "../components/SignUpBox.vue";
+import Resetpass from "../components/ResetPass.vue";
 import MainRedirect from "../components/MainRedirect.vue";
 
 
@@ -17,9 +17,9 @@ const routes = [ //equivalent of route element in React but grouped together in 
         component: LoginBox,
     },
     {
-        path: '/signup',
-        name: 'sign up',
-        component: SignUpBox,
+        path: '/reset',
+        name: 'reset password',
+        component: Resetpass,
     }
 ]
 
