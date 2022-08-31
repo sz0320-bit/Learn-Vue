@@ -140,23 +140,22 @@ export default {
         </div>
       </div>
     </div>
-  </div>
-
-  <transition name="fade" mode="out-in">
-    <div v-if="showConfirmation" class="h-full w-full absolute  flex justify-center items-center glass">
-      <div class="w-[30em] h-[15em] rounded-3xl p-5 bg-[#1f1f1f] flex justify-center items-center flex-col ">
-        <div class="text-2xl flex h-[75%] justify-center items-center gap-5">
-          Password Changed
-          <img src="../assets/check.svg" class="h-[2.5em]"/>
+    <transition name="fade" mode="out-in">
+      <div v-if="showConfirmation" class="h-full w-full absolute  flex justify-center items-center glass">
+        <div class="w-[30em] h-[15em] rounded-3xl p-5 bg-[#1f1f1f] flex justify-center items-center flex-col ">
+          <div class="text-2xl flex h-[75%] justify-center items-center gap-5">
+            Password Changed
+            <img src="../assets/check.svg" class="h-[2.5em]"/>
+          </div>
+          <button
+              @click="() => showConfirmation = false"
+              class="h-10 w-[45%]   rounded-xl bg-blue-700 flex justify-center items-center  text-lg hover:scale-105 duration-200 ">
+            CLOSE
+          </button>
         </div>
-        <button
-            @click="() => showConfirmation = false"
-            class="h-10 w-[45%]   rounded-xl bg-blue-700 flex justify-center items-center  text-lg hover:scale-105 duration-200 ">
-          CLOSE
-        </button>
       </div>
-    </div>
-  </transition>
+    </transition>
+  </div>
 </template>
 
 <style scoped>
