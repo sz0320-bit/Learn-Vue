@@ -6,13 +6,9 @@ import MainRedirect from "../components/MainRedirect.vue";
 
 
 const routes = [ //equivalent of route element in React but grouped together in an array with all routes
+
     {
-      path: '/',
-      name: 'home',
-      component: MainRedirect
-    },
-    {
-        path: '/signin',
+        path: '/',
         name: 'log in',
         component: LoginBox,
     },
